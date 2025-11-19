@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 export function webSocket() {
-  const serverUrl = import.meta.env.VITE_SERVER_URL
+  const serverUrl = "https://real-time-chat-application-backend-1.onrender.com"
   return io(serverUrl, {
     transports: ['websocket', 'polling'],
     reconnection: true,
