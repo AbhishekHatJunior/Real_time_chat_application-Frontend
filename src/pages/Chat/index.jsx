@@ -122,13 +122,13 @@ export default function Chat() {
         }
 
         // Add message to local state immediately
-        // if (currRoom === "general-chat") {
-        //     setGeneralMssg((prev) => [...prev, mssg]);
-        // } else if (currRoom === "tech-talk") {
-        //     setTechMssg((prev) => [...prev, mssg]);
-        // } else if (currRoom === "study-group") {
-        //     setStudyMssg((prev) => [...prev, mssg]);
-        // }
+        if (currRoom === "general-chat") {
+            setGeneralMssg((prev) => [...prev, mssg]);
+        } else if (currRoom === "tech-talk") {
+            setTechMssg((prev) => [...prev, mssg]);
+        } else if (currRoom === "study-group") {
+            setStudyMssg((prev) => [...prev, mssg]);
+        }
 
         setChatTxt("");
         chatInputRef.current.focus();
