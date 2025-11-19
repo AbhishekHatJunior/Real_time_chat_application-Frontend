@@ -58,7 +58,7 @@ export default function Chat() {
         };
 
         const handleChatMessage = (mssg, currRoom) => {
-            if (mssg.chatUser !== userName) {
+            // if (mssg.chatUser !== userName) {
                 if (currRoom === "general-chat") {
                     setGeneralMssg((prev) => [...prev, mssg]);
                 } else if (currRoom === "tech-talk") {
@@ -66,7 +66,7 @@ export default function Chat() {
                 } else if (currRoom === "study-group") {
                     setStudyMssg((prev) => [...prev, mssg]);
                 }
-            }
+            // }
         };
 
         socket.current.on("connect", () => {
