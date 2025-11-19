@@ -374,3 +374,21 @@
 .left-chat-box{
     background-color: rgb(219, 250, 222);
 }
+
+.rooms-div{
+    cursor: pointer;
+    background-color: rgb(199, 221, 155);
+}
+
+.rooms-div:hover{
+     background-color: rgb(171, 206, 100)
+}
+
+.username, .room{
+    color: #41c06c;
+}
+
+.chat-display-container{
+    display: flex;
+    gap: 90px;
+}
