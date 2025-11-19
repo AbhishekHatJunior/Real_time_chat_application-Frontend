@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 export function webSocket() {
-  const serverUrl = import.meta.env.SERVER_URL
+  const serverUrl = import.meta.env.VITE_SERVER_URL
   return io(serverUrl, {
     transports: ['websocket', 'polling'],
     reconnection: true,
